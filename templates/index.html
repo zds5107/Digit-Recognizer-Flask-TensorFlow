@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Recognizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body data-post-url="{{ url_for('handle_post') }}">
+
+    <a href="{{ url_for('index') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+
+    <h1>Handwritten Digit Recognizer</h1>
+
+    <div class ="canvas-prediction">
+
+        <div class="half-box">
+            
+            <h3>Draw</h3>
+            <canvas id="drawingCanvas" width="28" height="28"></canvas>
+            
+            <div class="button-group">
+                <button onclick="clearCanvas()">Clear</button>
+                <button onclick="guess()">Predict</button>
+            </div>
+        
+        </div>
+
+        <div class="half-box">
+            <h3 id="guess">Prediction</h3>
+            <div id="prediction-box" class="prediction-box"></div>
+            <div id="probability">Probability =</div>    
+            
+        
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div>
+            <span id="year"></span> Zachary Stopper.  
+        </div>
+
+        <div>
+              Licensed under the
+            <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.
+        </div>
+         
+        <div>       
+            View on
+            <a href="https://github.com/zds5107/Digit-Recognizer-Flask-TensorFlow" target="_blank"> GitHub</a>.
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+
+</body>
+
+</html>
