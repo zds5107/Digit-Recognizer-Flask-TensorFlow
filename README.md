@@ -8,14 +8,19 @@ The application runs locally in a Flask development environment. When a user dra
 
 
 ## Installation
+To use this project you will need to have python installed. Specifically, a version that supports TensorFlow 2.x. It is recommended that you set up a virtual environment. After this you can clone the repository and install the dependencies using the requirements.txt file. After this you can run app.py to start the Flask developement enviroment. 
 
 
 ## Usage
+This webapp is not deployed, so to use it you can run a local Flask development environment. After the app is running you can interact with it on any of the addresses that the Flask app is configured to run on. After going to an address you will be able to draw on a canvas and recieve digit predictions. 
 
 
 ##Takeaways and Future Improvements
 
-
+This project serves as a solid foundation, however there are several improvements that could be made in the future.
+-Deploy the application so that other users can use the application and provide data and feedback
+-Allow users to provide feedback when the prediction is incorrect
+Retrain the model as additional user data is collected
 
 
 
