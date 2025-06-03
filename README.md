@@ -4,25 +4,29 @@ This web app was developed as a practical and educational project to demonstrate
 
 ## How It Works
 
-The application runs locally in a Flask development environment. When a user draws a digit (0-9) on the browser-based canvas and requests a prediction, the pixel data is sent to the Flask backend. The server receives the image data and preprocesses it before it is passed to the Convolutional Neural Network (CNN) built using TensorFlow. The network was trained on the MNIST dataset consisting of 60,000 handwritten digits represented by 784-pixel values ranging from 0-255. I simplified the digits to 784-pixel values that are either a 1 or a 0 to match the browser-based canvas. Additionally the data augmented by applying slight zooms, shifts, and rotations to the dataset. This increased the amount of training data. After the user drawing data is passed to the model, a prediction is made and returned to the user interface where it is displayed.
+The application runs locally in a Flask development environment. When a user draws a digit (0-9) on the browser-based canvas and requests a prediction, the pixel data is sent to the Flask backend. The server receives the image data and preprocesses it before it is passed to the Convolutional Neural Network (CNN) built using TensorFlow. The network was trained on the MNIST dataset consisting of 60,000 handwritten digits represented by 784-pixel values ranging from 0-255. I simplified the digits to 784-pixel values that are either a 1 or a 0 to match the browser-based canvas. Additionally the data augmented by applying slight zooms, shifts, and rotations to the dataset. This increased the amount of training data. After the user drawing data is passed to the model, a prediction is made and returned to the user interface where it is displayed in real time.
 
 
 ## Installation
-To use this project you will need to have python installed. Specifically, a version that supports TensorFlow 2.x. It is recommended that you set up a virtual environment. After this you can clone the repository and install the dependencies using the requirements.txt file. After this you can run app.py to start the Flask developement enviroment. 
+To use this project you will need to have Python installed. Specifically, a version that supports TensorFlow 2.x. It is recommended that you set up a virtual environment. After this you can clone the repository and install the dependencies using the requirements.txt file. Finally, you can run app.py to start the Flask development environment. 
 
 
 ## Usage
-This webapp is not deployed, so to use it you can run a local Flask development environment. After the app is running you can interact with it on any of the addresses that the Flask app is configured to run on. After going to an address you will be able to draw on a canvas and recieve digit predictions. 
+This web app is not currently deployed. To use it you can run a local Flask development environment. After the app is running you can interact with it on any of the addresses that the Flask app is configured to run on. After going to an address you will be able to draw on a canvas and receive  digit predictions. 
 
 
-## Takeaways and Future Improvements
+## Takeaways
+This project served as an excellent learning experience, particularly in integrating machine learning models with web technologies. Key takeaways include:
+- Data preprocessing and augmentation play a critical role in improving model accuracy.
+- User-centered design is essential for creating intuitive and accessible interfaces that enhance the overall user experience.
+- Full-stack application development requires cohesive coordination between frontend, backend, and machine learning components to deliver a seamless and functional application.
 
+
+## Future Improvements
 This project serves as a solid foundation, however there are several improvements that could be made in the future.
--Deploy the application so that other users can use the application and provide data and feedback
--Allow users to provide feedback when the prediction is incorrect
-Retrain the model as additional user data is collected
-
-
+-Deploy the application so that others can use the it and provide real-world data.
+-Allow users to provide feedback when the prediction is incorrect or correct
+-Retrain the model as additional user data is collected to improve performance
 
 ## Libraries
 - Flask
