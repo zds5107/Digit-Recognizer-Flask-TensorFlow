@@ -15,7 +15,7 @@ To use this project you will need to have python installed. Specifically, a vers
 This webapp is not deployed, so to use it you can run a local Flask development environment. After the app is running you can interact with it on any of the addresses that the Flask app is configured to run on. After going to an address you will be able to draw on a canvas and recieve digit predictions. 
 
 
-##Takeaways and Future Improvements
+## Takeaways and Future Improvements
 
 This project serves as a solid foundation, however there are several improvements that could be made in the future.
 -Deploy the application so that other users can use the application and provide data and feedback
